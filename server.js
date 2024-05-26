@@ -28,7 +28,7 @@ app.get("/", (req, res) => {
 conn()
   .then(() => {
     app.listen(port, () => {
-      console.log("server is up and running");
+      console.log(`server is running on http://localhost:${port}`);
     });
   })
   .catch((err) => {
